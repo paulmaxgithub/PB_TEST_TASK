@@ -14,14 +14,14 @@ import SwiftUI
 ///
 /// - NOTE: This SwiftUI view dynamically displays either the `TransactionsView` 
 /// when the device is online or the `NoConnectionView` when the device is offline,
-/// based on the state of the `networkMonitor` object.
+/// based on the state of the `networkMonitor` object in ``MainContentViewModel``
 ///
 struct MainContentView: View {
     
-    @StateObject var networkMonitor = NetworkMonitor()
+    @StateObject private var vm = MainContentViewModel()
     
     var body: some View {
-        if networkMonitor.isOnline {
+        if vm.isOnline {
             TransactionsView()
         } else {
             NoConnectionView()
@@ -30,5 +30,5 @@ struct MainContentView: View {
 }
 
 #if DEBUG
-#Preview { MainContentView(networkMonitor: NetworkMonitor()) }
+#Preview { MainContentView() }
 #endif

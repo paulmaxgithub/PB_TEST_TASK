@@ -32,6 +32,7 @@
 		FA1DAC6B2BADBF01000729AE /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DAC6A2BADBF01000729AE /* TransactionsListView.swift */; };
 		FA1DAC6D2BADC1F8000729AE /* CategorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DAC6C2BADC1F8000729AE /* CategorySectionView.swift */; };
 		FA1DAC742BADE924000729AE /* AmountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DAC732BADE924000729AE /* AmountSectionView.swift */; };
+		FA1DAC762BAEF0DF000729AE /* MainContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DAC752BAEF0DF000729AE /* MainContentViewModel.swift */; };
 		FA8BA0E92BAD7B2700E4D747 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA0E82BAD7B2700E4D747 /* NetworkManager.swift */; };
 		FA8BA0EC2BAD7E8400E4D747 /* TransactionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA0EB2BAD7E8400E4D747 /* TransactionsService.swift */; };
 		FA8BA0EF2BAD8AA600E4D747 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA8BA0EE2BAD8AA600E4D747 /* README.md */; };
@@ -66,6 +67,7 @@
 		FA1DAC6A2BADBF01000729AE /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
 		FA1DAC6C2BADC1F8000729AE /* CategorySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionView.swift; sourceTree = "<group>"; };
 		FA1DAC732BADE924000729AE /* AmountSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountSectionView.swift; sourceTree = "<group>"; };
+		FA1DAC752BAEF0DF000729AE /* MainContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentViewModel.swift; sourceTree = "<group>"; };
 		FA8BA0E82BAD7B2700E4D747 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FA8BA0EB2BAD7E8400E4D747 /* TransactionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsService.swift; sourceTree = "<group>"; };
 		FA8BA0EE2BAD8AA600E4D747 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 			children = (
 				FA0B01E62BACC35B00FA6509 /* AppDelegate.swift */,
 				FA0B01E82BACC43000FA6509 /* SwiftUIContainer.swift */,
-				FA0B01A82BAB1C1600FA6509 /* MainContentView.swift */,
+				FA1DAC772BAEFAEB000729AE /* Main Content View */,
 			);
 			path = MAIN;
 			sourceTree = "<group>";
@@ -270,6 +272,31 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		FA1DAC772BAEFAEB000729AE /* Main Content View */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DAC792BAEFAFF000729AE /* ViewModel */,
+				FA1DAC782BAEFAF8000729AE /* View */,
+			);
+			path = "Main Content View";
+			sourceTree = "<group>";
+		};
+		FA1DAC782BAEFAF8000729AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B01A82BAB1C1600FA6509 /* MainContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA1DAC792BAEFAFF000729AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DAC752BAEF0DF000729AE /* MainContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FA8BA0EA2BAD7B3700E4D747 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0B01D62BAC29A900FA6509 /* NetworkMonitor.swift in Sources */,
+				FA1DAC762BAEF0DF000729AE /* MainContentViewModel.swift in Sources */,
 				FA0B01BE2BAB1ECF00FA6509 /* TransactionModel.swift in Sources */,
 				FA1DAC6D2BADC1F8000729AE /* CategorySectionView.swift in Sources */,
 				FA1DAC6B2BADBF01000729AE /* TransactionsListView.swift in Sources */,
@@ -532,7 +560,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WorldOfPAYBACK/WorldOfPAYBACK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPAYBACK/Preview Content\"";
 				DEVELOPMENT_TEAM = K7P4RU7LF4;
 				ENABLE_APP_SANDBOX = NO;
@@ -575,7 +603,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WorldOfPAYBACK/WorldOfPAYBACK.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"WorldOfPAYBACK/Preview Content\"";
 				DEVELOPMENT_TEAM = K7P4RU7LF4;
 				ENABLE_APP_SANDBOX = NO;

@@ -24,7 +24,7 @@ fileprivate let CLASS_ID: String = "[NetworkMonitor]"
 ///     - Create an instance of NetworkMonitor to start monitoring network status.
 ///     - Subscribe to the `isOnline` property to receive updates about the device's connectivity.
 ///
-class NetworkMonitor: ObservableObject {
+final class NetworkMonitor {
     
     @Published var isOnline: Bool = true
     
@@ -32,10 +32,15 @@ class NetworkMonitor: ObservableObject {
     
     init() {
         monitor = NWPathMonitor()
+        
+        /// Determines the online status of the device based on the network path's status.
+        /// - Parameters:
+        ///   - path: The network path status object representing the device's network connectivity.
         monitor?.pathUpdateHandler = { path in
             DispatchQueue.main.async { [weak self] in
                 guard let self else { return }
-                isOnline = path.status == .satisfied
+                isOnline = (path.status == .satisfied) && (path.status != .requiresConnection)
+                debugPrint("\(CLASS_ID): ONLINE is \(path.status == .satisfied) / \(path.status != .requiresConnection)")
             }
         }
         
