@@ -46,4 +46,6 @@
 
 ## Disclaimer
 
-✅ This project (code, description) is the property of the developer and is available for use by third parties. Happy Coding 🧑🏽‍💻 !!!
+✅ This project (code, description) is the property of the developer and is available for use by third parties. 
+
+© Happy Coding 🧑🏽‍💻 🎁 👍🏽
