@@ -2,7 +2,7 @@
 
 ✅ - DONE / ☑️ - TODO / ❓ - MORE INFORMATION REQUIRED
 
-✅ A new App named **WorldOfPAYBACK** is planned to be released. One of its first features involves displaying a list of transactions, and a corresponding detail screen for each.
+✅ A new App named **WorldOf...** is planned to be released. One of its first features involves displaying a list of transactions, and a corresponding detail screen for each.
 
 ## App - Requirements
 
@@ -31,7 +31,7 @@
 * ❓ The Feature you are currently working on is the first out of many. Multiple Teams will add more features in the near future (overall Team size is about 8 Developers and growing). The following list of Features (which are not part of this coding challenge) will give you an idea of what's planned for the upcoming releases.
  
 	1. "Feed"-Feature: Displays different, user-targeted content (displayed via webviews, images, ads etc.). **Note:** It is also planned to display the sum of all Transactions from the "Transaction"-Feature.
-	2. "Online Shopping"-Feature: Lists PAYBACK Partners and gives the possibility to jump to their App/Website.
+	2. "Online Shopping"-Feature: Lists App's Partners and gives the possibility to jump to their App/Website.
 	3. "Settings"-Feature: Gives the possibility to adjust general Settings.
 
 ## A Environment
